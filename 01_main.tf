@@ -7,5 +7,6 @@ resource "digitalocean_kubernetes_cluster" "camarj" {
       name = "camarj-nodes"
       size = "s-1vcpu-2gb"
       node_count = 1
+      tags = ["camarj-nodes"]
   }
 }
